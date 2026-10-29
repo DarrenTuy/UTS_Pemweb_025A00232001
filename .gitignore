@@ -1,0 +1,19 @@
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Log & temporary
+*.log
+*.tmp
+*.temp
+
+# Optional (kalau nanti pakai Composer)
+/vendor/
+composer.lock
