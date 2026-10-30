@@ -27,7 +27,7 @@ $units = [
         'country'       => 'Japan',
         'type'          => 'Light tank',
         'battle_rating' => '10.3',
-        'status'        => 'researched',
+        'status'        => 'not_owned',
         'reason'        => 'Mempynyai drone, cocok untuk ambush dan flanking dan pengganti Stingray di BR bracket yang lebih tinggi',
         'image'         => 'assets/jp_harimau.png'
     ],
@@ -81,13 +81,13 @@ $units = [
         'country'       => 'France',
         'type'          => 'Main battle tank',
         'battle_rating' => '12.7',
-        'status'        => 'not researched',
+        'status'        => 'not_owned',
         'reason'        => 'Armor yang cukup fair di tambah dengan senjata yang cukup kuat dan kendaraan yang mboile',
         'image'         => 'assets/fr_leclerc_s2.png'
     ],
     [
         'nama'          => 'BT-42',
-        'country'       => 'sweden',
+        'country'       => 'Sweden',
         'type'          => 'Assault gun',
         'battle_rating' => '1.7',
         'status'        => 'researched',
@@ -100,35 +100,26 @@ $units = [
         'type'          => 'Main battle tank',
         'battle_rating' => '8.0',
         'status'        => 'researched',
-        'reason'        => 'Autoloader yang sangat cepat dan kendaraan silly berbentuk cheese wedge'
+        'reason'        => 'Autoloader yang sangat cepat dan kendaraan silly berbentuk cheese wedge',
         'image'         => 'assets/sw_strv_103a.png'
     ],
     [
         'nama'          => 'CV 90/40 Bill',
-        'country'       => 'Sweden',
+        'country'       => 'weden',
         'type'          => 'Light tank',
         'battle_rating' => '10.3',
-        'status'        => 'not researched',
-        'reason'        => 'Senjata yang sangat nyaman dan cukup mematikan, dan tertarik dari video demo CV 90/40'
-        'image'         => 'assets/sw_cv_9056.png'
+        'status'        => 'not_owned',
+        'reason'        => 'Senjata yang sangat nyaman dan cukup mematikan dan menjadi favorit karena demo video CV 90/40 Bill',
+        'image'         => 'assets/sw_strf_9056.png'
     ],
     [
         'nama'          => 'BMD 4M2',
         'country'       => 'Russia',
         'type'          => 'Light tank',
         'battle_rating' => '9.7',
-        'status'        => 'not researched',
+        'status'        => 'not_owned',
         'reason'        => 'Dual weapon yang sangat berguna di banyak situasi dan kendaraan yang sangat mobile',
         'image'         => 'assets/ru_bmd_4m2.png'
-    ],
-    [
-        'nama'          => 'OTOMATIC',
-        'country'       => 'Italy',
-        'type'          => 'Self-propelled anti-aircraft gun',
-        'battle_rating' => '10.3',
-        'status'        => 'not researched',
-        'reason'        => '76mm Cannon yang sangat toxic dan kemampuan yang multi target yang sangat mematikan'
-        'image'         => 'assets/it_otomatic.png'
     ],
 
 ];
