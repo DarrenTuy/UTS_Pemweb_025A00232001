@@ -8,8 +8,8 @@ require_once 'data.php';
 $totalUnits    = count($units);
 $ownedCount    = countByStatus($units, 'researched');
 $notownedCount = countByStatus($units, 'not_owned');
-$avgbr         = getAverageBR($units);
 $highestUnit   = getHighestBrUnit($units);
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ $highestUnit   = getHighestBrUnit($units);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Kolektor</title>
+    <title>Darren Haq</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@ $highestUnit   = getHighestBrUnit($units);
             <p>website profile & Katalog koleksi unit favorit war thunder</p>
             <nav>
                 <a href="index.php" class="active">Home</a>
-                <a href="catalog.php">Catalog</a>
+                <a href="katalog.php">Catalog</a>
             </nav>
         </div>
     </header>
@@ -38,7 +38,7 @@ $highestUnit   = getHighestBrUnit($units);
         <section class="profile-section">
             <div class="profile-card">
                 <div class="profile-photo">
-                    <img src="assets/profile.jpg" alt="Profile Photo" width="160" height="160">
+                    <img src="assets/Foto_Profil.png" alt="Profile Photo" width="160" height="220">
                 </div>
                 <div class="profile-info">
                     <h2>Nama Kolektor</h2>
@@ -64,24 +64,21 @@ $highestUnit   = getHighestBrUnit($units);
                     <p><?= e((string) $notownedCount) ?></p>
                 </div>
                 <div class="summary-card">
-                    <h3>Average BR</h3>
-                    <p><?= e((string) $avgbr) ?></p>
+                    <h3>BR Tertinggi</h3>
+                    <?php if ($highestUnit !== null): ?>
+                        <p><?= e((string) $highestUnit['battle_rating']) ?></p>
+                        <span class="summary-sub"><?= e($highestUnit['name']) ?></span>
+                    <?php else: ?>
+                        <p>-</p>
+                    <?php endif; ?>
                 </div>
             </div>
-
-            <?php if ($highestUnit !== null): ?>
-                <p>
-                    Unit dengan BR tertinggi:
-                    <strong><?= e($highestUnit['name']) ?></strong>
-                    (BR <?= e((string)$highestUnit['name']) ?>)
-                </p>
-            <?php endif; ?>
         </section>
     </main>
 
     <footer>
-        <div class="container"
-            <p>UTS Pemrograman Web &copy; 2026</>
+        <div class="container">
+            <p>&copy; Darren Haq. Projek UTS pemrograman web 2026</p>
         </div>
     </footer>
     
