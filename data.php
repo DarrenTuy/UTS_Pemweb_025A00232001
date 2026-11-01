@@ -148,14 +148,3 @@ $units = [
         'image'         => 'assets/ru_bmd_4m2.png',
     ],
 ];
-
-$profile =
-[
-    [
-        'name'  => 'Darren Haq',
-        'nim'   => '025A00232001',
-        'univ'  => 'Tiga Serangkai University',
-        'photo' => 'assets/Foto_Profil.png',
-        'bio'   => 'Mahasiswa Tiga Serangkai University Prodi Informatika Semester 3 yang terobsesi dengan kendaraan-kendaraan Militer',
-    ],
-];

@@ -3,15 +3,15 @@
 **Nama:** Darren Haq  
 **NIM:** 025A00232001  
 **Kelas:** A2-3B
-**Mata Kuliah:** Pemrograman Web (253A23W15)
+**Mata Kuliah:** Pemrograman Web
 
 ## Deskripsi
 Website profil dan katalog koleksi ground units favorit dari game War Thunder.  
 Data disimpan di dalam array PHP multidimensi, dirender secara dinamis dengan perulangan dan percabangan, tanpa database.
 
 ## Cara Menjalankan di Localhost
-1. Pastikan Laragon sudah berjalan (Apache aktif).
-2. Letakkan folder proyek di `www` (Laragon).
+1. Pastikan Laragon sudah berjalan.
+2. Letakkan folder proyek di `www`.
 3. Buka browser, akses:
    `http://localhost/nama-folder-proyek/`
 4. Halaman utama: `index.php`  
