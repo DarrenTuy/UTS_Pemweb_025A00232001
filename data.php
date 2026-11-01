@@ -130,15 +130,6 @@ $units = [
         'image'         => 'assets/sw_strf_9056.png',
     ],
     [
-        'name'          => 'BMD 4M2',
-        'country'       => 'Russia',
-        'type'          => 'Light tank',
-        'battle_rating' => 9.7,
-        'status'        => 'not_owned',
-        'reason'        => 'Dual weapon yang sangat berguna di banyak situasi dan kendaraan yang sangat mobile',
-        'image'         => 'assets/ru_bmd_4m2.png',
-    ],
-    [
         'name'          => 'T-44-100',
         'country'       => 'Russia',
         'type'          => 'Medium tank',
@@ -147,15 +138,24 @@ $units = [
         'reason'        => 'Medium tank dengan meriam 100mm yang kuat dan amunisi BR-412D yang mematikan',
         'image'         => 'assets/ru_t_44_100.png',
     ],
+    [
+        'name'          => 'BMD 4M2',
+        'country'       => 'Russia',
+        'type'          => 'Light tank',
+        'battle_rating' => 9.7,
+        'status'        => 'not_owned',
+        'reason'        => 'Dual weapon yang sangat berguna di banyak situasi dan kendaraan yang sangat mobile',
+        'image'         => 'assets/ru_bmd_4m2.png',
+    ],
 ];
 
 $profile =
+[
     [
         'name'  => 'Darren Haq',
         'nim'   => '025A00232001',
-        'role'  => 'Tiga Serangkai University',
+        'univ'  => 'Tiga Serangkai University',
         'photo' => 'assets/Foto_Profil.png',
-        'bio'   => 'Pemain War Thunder yang fokus mengumpulkan ground unit favorit. '
-                . 'Koleksi ini berisi tank-tank yang menurut saya menarik dari segi gameplay, '
-                . 'keunikan, maupun kenangan saat memainkannya.',
-    ];
+        'bio'   => 'Mahasiswa Tiga Serangkai University Prodi Informatika Semester 3 yang terobsesi dengan kendaraan-kendaraan Militer',
+    ],
+];

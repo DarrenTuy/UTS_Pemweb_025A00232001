@@ -13,7 +13,3 @@ desktop.ini
 *.log
 *.tmp
 *.temp
-
-# Optional (kalau nanti pakai Composer)
-/vendor/
-composer.lock

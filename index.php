@@ -17,7 +17,7 @@ $highestUnit   = getHighestBrUnit($units);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darren Haq</title>
+    <title>War thunder FAV vehic catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +25,7 @@ $highestUnit   = getHighestBrUnit($units);
     <header>
         <div class="container">
             <h1>Koleksi War Thunder Ground Units</h1>
-            <p>website profile & Katalog koleksi unit favorit war thunder</p>
+            <p>Profile & Favorite units Catalog in War Thunder</p>
             <nav>
                 <a href="index.php" class="active">Home</a>
                 <a href="katalog.php">Catalog</a>
@@ -41,7 +41,7 @@ $highestUnit   = getHighestBrUnit($units);
                     <img src="assets/Foto_Profil.png" alt="Profile Photo" width="160" height="220">
                 </div>
                 <div class="profile-info">
-                    <h2>Nama Kolektor</h2>
+                    <h2>Darren Haq</h2>
                     <p class ="profile-role">War Thunder Enthusiast</p>
                     <p class="profile-bio">Military vehicle enthusiast with a passion for War Thunder vehicles collection.</p>
                 </div>
@@ -49,7 +49,7 @@ $highestUnit   = getHighestBrUnit($units);
         </section>
 
         <section>
-            <h2> Koleksi Unit Favorit</h2>
+            <h2> Favorite Units Summary</h2>
             <div class="summary"> 
                 <div class="summary-card">
                     <h3>Total Units</h3>

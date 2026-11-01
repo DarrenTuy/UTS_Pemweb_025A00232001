@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+// IDX
+
 function e(string $value): string
 {
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
@@ -10,8 +12,8 @@ function e(string $value): string
 function getStatusLabel(string $status): string
 {
     return match ($status) {
-        'researched' => 'Sudah Researched',
-        'not_owned' => 'Belum Researched',
+        'researched' => 'Researched',
+        'not_owned' => 'Not Owned',
         default => 'Unknown status',
     };
 }
@@ -69,4 +71,42 @@ function countByCountry(array $units): array
     }
 
     return $result;
+}
+
+// KAT
+
+function getUniqueCountries(array $units): array
+{
+    $countries = array_unique(array_column($units, 'country'));
+    sort($countries);
+
+    return $countries;
+}
+
+function filterByCountry(array $units, string $country): array
+{
+    if ($country === 'all') {
+        return $units;
+    }
+
+    $filtered = array_filter($units, function (array $unit) use ($country): bool {
+        return $unit['country'] === $country;
+    });
+
+    return array_values($filtered);
+}
+
+function sortByBattleRating(array $units, string $sort): array
+{
+    if ($sort === 'br_asc') {
+        usort($units, function (array $a, array $b): int {
+            return $a['battle_rating'] <=> $b['battle_rating'];
+        });
+    } elseif ($sort === 'br_desc') {
+        usort($units, function (array $a, array $b): int {
+            return $b['battle_rating'] <=> $a['battle_rating'];
+        });
+    }
+    
+    return $units;
 }
