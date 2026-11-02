@@ -35,7 +35,7 @@ function countByStatus(array $units, string $status): int
     return count($filtered);
 }
 
-function getHighestBrUnit(array $units)
+function getHighestBrUnit(array $units): ?array
 {
     if (count($units) === 0) {
         return null;

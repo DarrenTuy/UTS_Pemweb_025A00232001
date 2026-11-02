@@ -150,7 +150,7 @@ $allCountriesLink = 'katalog.php?country=all&sort=' . urlencode($selectedSort);
 
     <footer>
         <div class="container">
-            <p>&copy; Darren Haq. Projek UTS pemrograman web 2026 2026</p>
+            <p>&copy; Darren Haq. Projek UTS pemrograman web 2026</p>
         </div>
     </footer>
 
